@@ -1,3 +1,6 @@
+Demo of the Project:
+https://drive.google.com/file/d/1CkwH7ysWAnmX2EBG0e2M6miFZp5h6No6/view?usp=sharing
+
 Turn-Based Chess-Like Game
 Overview
 This project implements a turn-based chess-like game with a server-client architecture. The game is played between two players on a 5x5 grid. Each player controls a team of 5 characters, which include Pawns (P1, P2, P3), Hero1 (H1), and Hero2 (H2). The game is developed using Node.js for the server, WebSocket for real-time communication, and plain HTML/CSS/JavaScript for the client interface.
