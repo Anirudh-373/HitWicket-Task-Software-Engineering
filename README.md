@@ -1,68 +1,53 @@
 Demo of the Project:
 https://drive.google.com/file/d/1CkwH7ysWAnmX2EBG0e2M6miFZp5h6No6/view?usp=sharing
 
-Turn-Based Chess-Like Game
-Overview
-This project implements a turn-based chess-like game with a server-client architecture. The game is played between two players on a 5x5 grid. Each player controls a team of 5 characters, which include Pawns (P1, P2, P3), Hero1 (H1), and Hero2 (H2). The game is developed using Node.js for the server, WebSocket for real-time communication, and plain HTML/CSS/JavaScript for the client interface.
+Turn Based Chess Like Game
+This is a turn-based game similar to chess, played on a 5x5 grid. There are two players, each controlling a team of 5 characters: 3 Pawns and 2 Heroes. The server is built with Node.js, and WebSocket is used for real-time communication. The client interface uses plain HTML, CSS, and JavaScript.
 
-Characters and Movement
-Pawn (P1, P2, P3):
+Characters and Moves:
+Pawns (P1, P2, P3):
+  Move one block in any direction: Left, Right, Forward, or Backward.
+  Move commands: L (Left), R (Right), F (Forward), B (Backward).
 
-Moves one block in any direction (Left, Right, Forward, or Backward).
-Move commands: L (Left), R (Right), F (Forward), B (Backward).
 Hero1 (H1):
+  Moves two blocks straight in any direction.
+  Can defeat any opponent's character in its path.
+  Move commands: L (Left), R (Right), F (Forward), B (Backward).
 
-Moves two blocks straight in any direction. Kills any opponent's character in its path.
-Move commands: L (Left), R (Right), F (Forward), B (Backward).
 Hero2 (H2):
+  Moves two blocks diagonally in any direction.
+  Can defeat any opponent's character in its path.
+  Move commands: FL (Forward-Left), FR (Forward-Right), BL (Backward-Left), BR (Backward-Right).
 
-Moves two blocks diagonally in any direction. Kills any opponent's character in its path.
-Move commands: FL (Forward-Left), FR (Forward-Right), BL (Backward-Left), BR (Backward-Right).
-Game Flow
-Initial Setup: Players start by arranging their characters on their respective starting rows.
-Turns: Players alternate turns, making one move per turn.
-Combat: If a character moves to a space occupied by an opponent's character, the opponent's character is removed from the game.
-Winning: The game ends when one player eliminates all of their opponent's characters.
-Setup Instructions
-Prerequisites
-Node.js installed on your machine.
-Installation
-Clone the repository:
+Game Flow:
+  Setup: Players place their characters on their starting rows.
+  Turns: Players take turns moving one character per turn.
+  Combat: If a character moves to a space with an opponent's character, that character is removed from the game.
+  Winning: The game ends when one player has eliminated all of the opponent's characters.
 
+Setup Instructions and Prerequisites:
+Node.js must be installed.
 
-git clone https://github.com/your-username/chess-like-game.git
-cd chess-like-game
-Install dependencies:
+Installation:
+  1. Clone the repository:
+       git clone https://github.com/your-username/chess-like-game.git
+       cd chess-like-game
+  2. Install dependencies:
+       npm install
 
-Navigate to the project directory and install the required Node.js packages.
+Running the Project:
+  1. Start the server:
+     node server.js
+  2. Open the game in a browser:
+     Go to http://localhost:8080 to play the game.
 
+Playing the Game:
+  1. Click a character to select it.
+  2. Click a move direction to move the character.
+  3. Move history and captured characters will be shown below the game board.
 
-npm install
-Running the Game
-Start the server:
-
-Run the following command to start the server:
-
-
-node server.js
-The server will start on port 8080.
-
-Open the game in a browser:
-
-Open your web browser and navigate to:
-
-
-http://localhost:8080
-The game will load in your browser. You can now play the game by following the on-screen instructions.
-
-Playing the Game
-Click on a character to select it. The available moves for that character will be displayed as buttons.
-Click on a move direction to move the character.
-The move history and captured history will be displayed below the game board.
-
-
-Project Structure
-server.js: Main server-side code that handles game logic, WebSocket communication, and game state management.
-public/index.html: The main HTML file for the client-side interface.
-public/script.js: Client-side JavaScript that handles game interaction, rendering, and communication with the server.
-public/style.css: (Optional) A file for custom styles, if needed.
+Project Structure:
+  1. server.js: Handles the game logic, WebSocket communication, and game state on the server side.
+  2. public/index.html: The main HTML file for the game interface.
+  3. public/script.js: Handles game interactions and communication with the server.
+  4. public/style.css: (Optional) For custom styles.
