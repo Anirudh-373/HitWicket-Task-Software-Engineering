@@ -29,9 +29,9 @@ Setup Instructions and Prerequisites:
 Node.js must be installed.
 
 Installation:
-  1. Clone the repository: git clone https://github.com/your-username/chess-like-game.git
-  2. Go into the Directory: cd chess-like-game
-  3. Install dependencies: npm install
+ **1. Clone the repository:** git clone https://github.com/your-username/chess-like-game.git
+  **2. Go into the Directory:** cd chess-like-game
+  **3. Install dependencies:** npm install
 
 Running the Project:
   1. Start the server:
