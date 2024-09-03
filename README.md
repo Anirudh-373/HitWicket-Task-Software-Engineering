@@ -31,8 +31,9 @@ Node.js must be installed.
 Installation:
   1. Clone the repository:
        git clone https://github.com/your-username/chess-like-game.git
+
        cd chess-like-game
-  2. Install dependencies:
+  3. Install dependencies:
        npm install
 
 Running the Project:
